@@ -8,3 +8,26 @@
 h1 {
   display: none;
 }
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.logo {
+  height: 60px;
+}
+
+header button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+header button img {
+  height: 20px;
+}
