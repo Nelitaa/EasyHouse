@@ -1,25 +1,15 @@
-import _ from 'lodash';
-import './style.css';
-import Img from './img.png';
-import printMe from './print.js';
+// Menu mobile
+const menuButton = document.querySelector('header button');
+const menuImg = menuButton.querySelector('img');
+const nav = document.querySelector('nav');
 
-function component() {
-  const element = document.createElement('div');
-  const btn = document.createElement('button');
-  const myImage = new Image();
-
-  element.innerHTML = _.join(['-->', ''], ' ');
-  element.classList.add('template');
-
-  btn.innerHTML = 'Click me and check the console!';
-  btn.onclick = printMe;
-
-  myImage.src = Img;
-
-  element.appendChild(btn);
-  element.appendChild(myImage);
-
-  return element;
-}
-
-document.body.appendChild(component());
+menuButton.addEventListener('click', () => {
+  if (menuImg.src.includes('menu.png')) {
+    menuImg.src = './images/close.png';
+    nav.classList.add('active');
+  } else {
+    menuImg.src = './images/menu.png';
+    nav.classList.remove('active');
+  }
+  menuButton.blur(); // Remove focus from button
+});
