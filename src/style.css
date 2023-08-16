@@ -122,7 +122,7 @@ nav.active a img {
 
   nav ul li {
     height: 100%;
-    width: 120px;
+    /*width: 120px;*/
   }
 
   nav ul li a {
@@ -150,5 +150,48 @@ nav.active a img {
 
   nav ul li a:focus img {
     transform: scale(1.1);
+  }
+  /*desktop Menu update*/
+  .body_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0;
+  }
+  .project_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+  .menu_list{
+    display: flex;
+    align-items: center;
+  }
+  .menu_element{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .navbar{
+    width: 60%;
+    justify-content: center;
+  }
+  /*body section*/
+  .container_desktop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0;
+  }
+  .img_section{
+    height: 100vh;
+    width: 90%;
+    background-image: linear-gradient(to bottom, rgba(28, 29, 31, 0.52), rgba(51, 38, 48, 0.73)),
+    url('images/home_banner.jpg');;
+    background-size: cover;
   }
 }
