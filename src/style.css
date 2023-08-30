@@ -403,5 +403,26 @@ nav.active a img {
   .estate_details{
     display: flex;
     width: 100%;
+    justify-content: space-between;
+  }
+  .detail_line{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .detail_number{
+    font-size: 15px;
+    color: #6b9b82;
+    font-weight: bold;
+  }
+  .detail_img_number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .detail_title{
+    font-size: 12px;
   }
 }
