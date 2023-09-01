@@ -1,9 +1,9 @@
 import './style.css';
-import logo from'./images/logo.png';
-import arrow_down from './images/arrow-down.png';
-import house_icon from './images/house-icon.svg';
-import pencil_square from './images/pencil-icon.svg';
-import shield_check from './images/shield-icon.svg';
+import logo from './images/logo.png';
+import arrowDown from './images/arrow-down.png';
+import houseIcon from './images/house-icon.svg';
+import pencilSquare from './images/pencil-icon.svg';
+import shieldCheck from './images/shield-icon.svg';
 
 require('bootstrap-icons/font/bootstrap-icons.css');
 
@@ -22,14 +22,14 @@ menuButton.addEventListener('click', () => {
   }
   menuButton.blur(); // Remove focus from button
 });
-//desktop menu
+// desktop menu
 const homeLogo = document.querySelector('.logoImg');
 homeLogo.src = logo;
 const dropdownMenu = document.querySelector('.menu_dropdown_arrow');
-dropdownMenu.src = arrow_down;
-const house_Icon = document.querySelector('.house_icon');
-house_Icon.src = house_icon;
-const pencil_Icon = document.querySelector('.pencil-square');
-const shiel_Check = document.querySelector('.shield-check');
-pencil_Icon.src = pencil_square;
-shiel_Check.src = shield_check;
+dropdownMenu.src = arrowDown;
+const housicon = document.querySelector('.house_icon');
+housicon.src = houseIcon;
+const pencilIcon = document.querySelector('.pencil-square');
+const shielCheck = document.querySelector('.shield-check');
+pencilIcon.src = pencilSquare;
+shielCheck.src = shieldCheck;
