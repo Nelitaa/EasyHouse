@@ -342,8 +342,6 @@ nav.active a img {
   }
   .houses_section{
     width: 90%;
-    height: 600px;
-    border: 1px solid black;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -362,6 +360,7 @@ nav.active a img {
     width: 100%;
     height: 100%;
     justify-content: space-between;
+    flex-wrap: wrap;
     
   }
   .estate{
@@ -369,8 +368,9 @@ nav.active a img {
     height: 400px;
     display: flex;
     flex-direction: column;
-    border: 1px solid green;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     align-items: center;
+    margin-bottom: 3em;
   }
   .estate_image{
     width: 100%;
@@ -424,5 +424,67 @@ nav.active a img {
   }
   .detail_title{
     font-size: 12px;
+    
+  }
+  .detail_unit
+  {
+    font-weight: bolder;
+  font-size: 7px;
+  }
+  .area_detail{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2px;
+  }
+  .detail_value
+  {
+    font-size: 15px;
+    color: #6b9b82;
+    font-weight: bold;
+  }
+  .estate_price_status{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1em;
+  }
+  .estate_price{
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .estate_status{
+    background-color: #6b9b82;
+    border-radius: 20px;
+    display: flex;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  .option_buttons{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 3em;
+    gap: 3em;
+  }
+  .option_button{
+    background-color: #6b9b82;
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .option_button:hover{
+    background-color: white!important;
+    color: #6b9b82!important;
+    box-shadow: #6b9b82 0px 7px 29px 0px;
+
   }
 }
