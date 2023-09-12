@@ -1,6 +1,4 @@
 import './style.css';
-import logo from './images/logo.png';
-import arrowDown from './images/arrow-down.png';
 import houseIcon from './images/house-icon.svg';
 import pencilSquare from './images/pencil-icon.svg';
 import shieldCheck from './images/shield-icon.svg';
@@ -14,19 +12,15 @@ const nav = document.querySelector('nav');
 
 menuButton.addEventListener('click', () => {
   if (menuImg.src.includes('menu.png')) {
-    menuImg.src = './images/close.png';
+    menuImg.src = './assets/resources/images/close.png';
     nav.classList.add('active');
   } else {
-    menuImg.src = './images/menu.png';
+    menuImg.src = './assets/resources/images/menu.png';
     nav.classList.remove('active');
   }
   menuButton.blur(); // Remove focus from button
 });
 // desktop menu
-const homeLogo = document.querySelector('.logoImg');
-homeLogo.src = logo;
-const dropdownMenu = document.querySelector('.menu_dropdown_arrow');
-dropdownMenu.src = arrowDown;
 const housicon = document.querySelector('.house_icon');
 housicon.src = houseIcon;
 const pencilIcon = document.querySelector('.pencil-square');
