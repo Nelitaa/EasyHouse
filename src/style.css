@@ -35,7 +35,7 @@ header {
   z-index: 1;
 }
 
-.logoImg {
+.logo-image {
   height: 70px;
 }
 
@@ -43,13 +43,6 @@ header button {
   background-color: #fff;
   border: none;
   cursor: pointer;
-}
-
-.logo:focus,
-.logo:hover,
-header button:focus,
-header button:hover {
-  transform: scale(1.1);
 }
 
 header button img {
@@ -60,10 +53,48 @@ nav {
   display: none;
 }
 
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assets/resources/images/footer-background.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 3em 0 3em 0;
+}
+
+.social-media-list {
+  display: flex;
+  column-gap: 10px;
+}
+
+.social-media-list img {
+  height: 20px;
+  width: 20px;
+}
+
+footer hr {
+  width: 2em;
+  margin: 1em 0 1em 0;
+  border: 0.8px solid #fff;
+}
+
+.copyright-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+}
+
+.copyright-section p {
+  color: #fff;
+}
+
 /* Menu mobile */
 nav.active {
   display: block;
-  position: absolute;
   top: 90px;
   left: 0;
   width: 100%;
@@ -97,6 +128,16 @@ nav.active a:focus {
 
 nav.active a img {
   display: none;
+}
+
+/* Styles for hover and focus interactions */
+.social-media-list img:focus,
+.social-media-list img:hover,
+.logo:focus,
+.logo:hover,
+header button:focus,
+header button:hover {
+  transform: scale(1.1);
 }
 
 /* Styles for screens from 768px onwards */
@@ -494,60 +535,5 @@ nav.active a img {
     background-color: white !important;
     color: #6b9b82 !important;
     box-shadow: #6b9b82 0 7px 29px 0;
-  }
-
-  .general_footer {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(./images/footer_image.jpg);
-    padding-top: 7em;
-    padding-bottom: 7em;
-    justify-content: center;
-  }
-
-  .footer_element {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .nav_menu2,
-  .address_list {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-  }
-
-  .nav_menu2_element,
-  .address_list_element {
-    font-size: 12px;
-    color: white;
-  }
-
-  .nav_contact_separator {
-    width: 2px;
-    background-color: white;
-  }
-
-  .social_media_list {
-    display: flex;
-    gap: 2em;
-  }
-
-  .copyright {
-    margin-top: 2em;
-  }
-
-  .copyright_text {
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-  }
-
-  .separator {
-    width: 2px;
-    background-color: white;
   }
 }
