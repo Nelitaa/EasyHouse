@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Easyhouse</h1>
     <header>
         <a class="logo" href="#"><img src="assets/resources/images/logo.png" class="logo-image" alt="Logo"></a>
         <button type="submit"><img src="assets/resources/images/menu.png" alt="Menu"></button>
@@ -22,48 +21,45 @@
             </ul>
         </nav>
     </header>
-    <div class="container_desktop">
-        <div class="img_section">
-            <div class="section_title colored_white">
-                Discover your dream home today
-            </div>
+
+    <main class="container-desktop">
+        <div class="img-section">
+            <h1>Discover your dream home today</h1>
         </div>
-        <div class="search_section">
-            <div class="action_buttons">
-                <div class="sale_button search_button active_search">SALE</div>
-                <div class="rent_button search_button">RENT</div>
+        <div class="search-section">
+            <div class="action-buttons">
+                <div class="search-button active-search">SALE</div>
+                <div class="search-button">RENT</div>
             </div>
-            <div class="form_section">
-                <div class="critereas">
-                    <select name="location" id="location" class="a_criterea">
-                        
+            <div class="form-section">
+                <div class="criteria-container">
+                    <select name="location" id="location" class="criteria">
                         <option value="" disabled selected>Location</option>
                         <option value="location1">Location1</option>
                         <option value="location2">Location2</option>
                     </select>
-                    <select name="price_start" id="price_start" class="a_criterea">
-                        <option value="" disabled selected>Price From</option>
-                        <option value="Price1">Location1</option>
-                        <option value="price2">Location2</option>
+                    <select name="price_start" id="price_start" class="criteria">
+                        <option value="" disabled selected>Price from</option>
+                        <option value="price1">Price1</option>
+                        <option value="price2">Price2</option>
                     </select>
-                    <select name="price_end" id="price_end" class="a_criterea">
-                        <option value="" disabled selected>Price To</option>
-                        <option value="price1">Location1</option>
-                        <option value="price">Location2</option>
+                    <select name="price_end" id="price_end" class="criteria">
+                        <option value="" disabled selected>Price to</option>
+                        <option value="price1">Price1</option>
+                        <option value="price2">Price2</option>
                     </select>
-                    <select name="roms" id="location" class="a_criterea">
-                        <option value="" disabled selected>Roms</option>
+                    <select name="rooms" id="rooms" class="criteria">
+                        <option value="" disabled selected>Rooms</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                     </select>
-                    <select name="sort_by" id="sort_by" class="a_criterea">
+                    <select name="sort_by" id="sort_by" class="criteria">
                         <option value="" disabled selected>Sort By</option>
-                        <option value="criterea1">criterea1</option>
-                        <option value="criterea1">criterea1</option>
+                        <option value="criteria1">Criteria1</option>
+                        <option value="criteria2">Criteria2</option>
                     </select>
-
                 </div>
-                <div class="search_submit_button">SEARCH</div>
+                <button type="submit" class="search-submit-button">SEARCH</button>
             </div>
         </div>
         <div class="services_section">
@@ -391,7 +387,7 @@
                 <button type="submit" class="option_button">VIEW MORE RENT</button>
             </div>
         </div>
-    </div>
+    </main>
 
     <footer>
         <div class="information-section">

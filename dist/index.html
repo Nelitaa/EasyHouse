@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
 <body>
-    <h1>Easyhouse</h1>
     <header>
         <a class="logo" href="#"><img src="assets/resources/images/logo.png" class="logo-image" alt="Logo"></a>
         <button type="submit"><img src="assets/resources/images/menu.png" alt="Menu"></button>
@@ -15,54 +14,52 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="buy">Buy<img src="assets/resources/images/arrow-down.png" alt="Arrow down icon"></a></li>
+                <li><a href="rent">Rent<img src="assets/resources/images/arrow-down.png" alt="Arrow down icon"></a></li>
                 <li><a href="about">About Us</a></li>
                 <li><a href="news">News</a></li>
                 <li><a href="contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <div class="container_desktop">
-        <div class="img_section">
-            <div class="section_title colored_white">
-                Discover your dream home today
-            </div>
+
+    <main class="container-desktop">
+        <div class="img-section">
+            <h1>Discover your dream home today</h1>
         </div>
-        <div class="search_section">
-            <div class="action_buttons">
-                <div class="sale_button search_button active_search">SALE</div>
-                <div class="rent_button search_button">RENT</div>
+        <div class="search-section">
+            <div class="action-buttons">
+                <div class="search-button active-search">SALE</div>
+                <div class="search-button">RENT</div>
             </div>
-            <div class="form_section">
-                <div class="critereas">
-                    <select name="location" id="location" class="a_criterea">
-                        
+            <div class="form-section">
+                <div class="criteria-container">
+                    <select name="location" id="location" class="criteria">
                         <option value="" disabled selected>Location</option>
                         <option value="location1">Location1</option>
                         <option value="location2">Location2</option>
                     </select>
-                    <select name="price_start" id="price_start" class="a_criterea">
-                        <option value="" disabled selected>Price From</option>
-                        <option value="Price1">Location1</option>
-                        <option value="price2">Location2</option>
+                    <select name="price_start" id="price_start" class="criteria">
+                        <option value="" disabled selected>Price from</option>
+                        <option value="price1">Price1</option>
+                        <option value="price2">Price2</option>
                     </select>
-                    <select name="price_end" id="price_end" class="a_criterea">
-                        <option value="" disabled selected>Price To</option>
-                        <option value="price1">Location1</option>
-                        <option value="price">Location2</option>
+                    <select name="price_end" id="price_end" class="criteria">
+                        <option value="" disabled selected>Price to</option>
+                        <option value="price1">Price1</option>
+                        <option value="price2">Price2</option>
                     </select>
-                    <select name="roms" id="location" class="a_criterea">
-                        <option value="" disabled selected>Roms</option>
+                    <select name="rooms" id="rooms" class="criteria">
+                        <option value="" disabled selected>Rooms</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                     </select>
-                    <select name="sort_by" id="sort_by" class="a_criterea">
+                    <select name="sort_by" id="sort_by" class="criteria">
                         <option value="" disabled selected>Sort By</option>
-                        <option value="criterea1">criterea1</option>
-                        <option value="criterea1">criterea1</option>
+                        <option value="criteria1">Criteria1</option>
+                        <option value="criteria2">Criteria2</option>
                     </select>
-
                 </div>
-                <div class="search_submit_button">SEARCH</div>
+                <button type="submit" class="search-submit-button">SEARCH</button>
             </div>
         </div>
         <div class="services_section">
@@ -390,19 +387,41 @@
                 <button type="submit" class="option_button">VIEW MORE RENT</button>
             </div>
         </div>
-    </div>
+    </main>
 
     <footer>
-        <div class="social-media-list">
-            <img src="./assets/resources/images/facebook-icon.png" alt="Facebook Icon">
-            <img src="./assets/resources/images/instagram-icon.png" alt="Instagram Icon">
-            <img src="./assets/resources/images/twitter-icon.png" alt="Twitter Icon">
+        <div class="information-section">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="buy">Buy</a></li>
+                <li><a href="rent">Rent</a></li>
+                <li><a href="about">About Us</a></li>
+                <li><a href="news">News</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+            <div class="vertical-separator"></div>
+            <ul>
+                <li class="information">Easy House Renting Agency</li>
+                <li class="information">Transaction / Gestion / Location</li>
+                <li class="information">306 Rivera St, WellCity, BOLIVIA</li>
+                <li class="information">+2135 89 6558 401 235</li>
+                <li class="information">info@easyhouse.bl</li>
+            </ul>
+            <div class="vertical-separator"></div>
+            <div class="social-media-list">
+                <img src="./assets/resources/images/facebook-icon.png" alt="Facebook Icon">
+                <img src="./assets/resources/images/instagram-icon.png" alt="Instagram Icon">
+                <img src="./assets/resources/images/twitter-icon.png" alt="Twitter Icon">
+            </div>
         </div>
         <hr>
         <div class="copyright-section">
             <p>Copyright &#169; 2023</p>
+            <div class="vertical-separator-small"></div>
             <p>Link privacy</p>
+            <div class="vertical-separator-small"></div>
             <p>Website by Nela & Koami</p>
+            <div class="vertical-separator-small"></div>
             <p>TVA: 125463578900</p>
         </div>
     </footer>
