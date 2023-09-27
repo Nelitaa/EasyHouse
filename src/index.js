@@ -1,9 +1,4 @@
 import './style.css';
-import houseIcon from './images/house-icon.svg';
-import pencilSquare from './images/pencil-icon.svg';
-import shieldCheck from './images/shield-icon.svg';
-
-require('bootstrap-icons/font/bootstrap-icons.css');
 
 // Menu mobile
 const menuButton = document.querySelector('header button');
@@ -20,10 +15,3 @@ menuButton.addEventListener('click', () => {
   }
   menuButton.blur(); // Remove focus from button
 });
-// desktop menu
-const housicon = document.querySelector('.house_icon');
-housicon.src = houseIcon;
-const pencilIcon = document.querySelector('.pencil-square');
-const shielCheck = document.querySelector('.shield-check');
-pencilIcon.src = pencilSquare;
-shielCheck.src = shieldCheck;

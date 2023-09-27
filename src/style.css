@@ -16,23 +16,17 @@ nav {
   display: none;
 }
 
+h2,
 h1 {
-  color: #fff;
   font-size: 20px;
   font-family: 'DM Serif Display', serif;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: write 4s steps(40) 1s forwards;
+  letter-spacing: 1px;
 }
 
-@keyframes write {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
+h3 {
+  font-weight: bold;
+  color: #6b9b82;
+  letter-spacing: 1px;
 }
 
 ul {
@@ -90,6 +84,23 @@ header button img {
   height: 40vh;
   width: 100%;
   text-align: center;
+}
+
+h1 {
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: write 4s steps(40) 1s forwards;
+}
+
+@keyframes write {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 .search-section {
@@ -187,6 +198,54 @@ header button img {
 
 .search-submit-button:focus {
   border: #6b9b82 2px solid;
+}
+
+.services-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+  margin-top: 3em;
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 50px;
+  margin-top: 4em;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+}
+
+.service-image-round-shape {
+  display: flex;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 2px solid #6b9b82;
+  padding: 1.5em;
+}
+
+.service-image {
+  height: 30px;
+  width: 30px;
+}
+
+.service-description {
+  margin-top: 10px;
+  letter-spacing: 1px;
+  font-weight: 200;
+  line-height: 2;
+  width: 80%;
 }
 
 /* Footer */
@@ -289,8 +348,13 @@ header button:hover {
     display: none;
   }
 
+  h2,
   h1 {
     font-size: 50px;
+  }
+
+  h3 {
+    font-size: 20px;
   }
 
   /* Header */
@@ -350,6 +414,28 @@ header button:hover {
   .criteria {
     width: 15vw;
     height: 63px;
+  }
+
+  .services-section {
+    padding-top: 20em;
+    padding-bottom: 5em;
+    margin-top: -15em;
+  }
+
+  .services-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .service-image-round-shape {
+    border: 2.5px solid #6b9b82;
+    padding: 2em;
+  }
+
+  .service-image {
+    height: 45px;
+    width: 45px;
   }
 
   /* Footer */
@@ -457,61 +543,6 @@ header button:hover {
   }
 
   /* main section */
-  .services_section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding-top: 25em;
-    padding-bottom: 5em;
-    background-color: #bebebf;
-    margin-top: -15em;
-  }
-
-  .services_list {
-    list-style: none;
-    display: flex;
-    width: 80%;
-    gap: 150px;
-  }
-
-  .a_service {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-
-  .service_image_round_shape {
-    border-radius: 50%;
-    margin-bottom: 20px;
-    border: 3px solid #719e86;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2em;
-  }
-
-  .service_image {
-    color: #6c9b82;
-    height: 50px;
-    width: 50px;
-  }
-
-  .service_title {
-    font-size: 20px;
-    font-weight: bold;
-    color: #719e86;
-    margin-bottom: 20px;
-  }
-
-  .service_description {
-    font-size: 15px;
-    text-align: center;
-  }
 
   .houses_section {
     width: 90%;
