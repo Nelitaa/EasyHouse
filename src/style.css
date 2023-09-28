@@ -189,17 +189,6 @@ h1 {
   cursor: pointer;
 }
 
-.search-submit-button:focus,
-.search-submit-button:hover {
-  background-color: #fff;
-  color: #6b9b82;
-  border: #6b9b82 1px solid;
-}
-
-.search-submit-button:focus {
-  border: #6b9b82 2px solid;
-}
-
 .services-section {
   display: flex;
   flex-direction: column;
@@ -240,6 +229,16 @@ h1 {
   width: 30px;
 }
 
+.services-section:hover .service-image {
+  animation: rotate 2s linear;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .service-description {
   margin-top: 10px;
   letter-spacing: 1px;
@@ -253,7 +252,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4em 2em 4em 2em;
+  padding: 4em 2em 8em 2em;
 }
 
 .section-description {
@@ -277,11 +276,17 @@ h1 {
   flex-direction: column;
   align-items: center;
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
-  max-width: 600px;
+  max-width: 400px;
+  max-height: 460px;
+}
+
+.estate:hover {
+  transform: scale(1.01);
 }
 
 .estate-image {
-  height: 200px;
+  height: 230px;
+  width: 100%;
 }
 
 .details {
@@ -289,6 +294,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   padding: 1.8em 1.5em 1.8em 1.5em;
+  min-height: 230px;
   width: 100%;
 }
 
@@ -309,10 +315,12 @@ h1 {
   font-weight: bold;
 }
 
-main hr {
+.horizontal-separator-estate {
   width: 100%;
   margin: 0.7em 0 1.4em 0;
-  border: 0.8px solid #707070;
+  border: none;
+  height: 0.5px;
+  background-color: #707070;
 }
 
 .estate-details {
@@ -365,7 +373,7 @@ main hr {
 }
 
 .estate-price {
-  font-size: x-large;
+  font-size: 34px;
   font-family: 'DM Serif Display', serif;
 }
 
@@ -388,8 +396,7 @@ main hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 210px;
-  margin-top: 2em;
+  margin-top: 2.5em;
   gap: 2em;
 }
 
@@ -397,12 +404,7 @@ main hr {
   border: none;
   font-size: 12px;
   height: 40px;
-}
-
-.option-button:hover {
-  background-color: white !important;
-  color: #6b9b82 !important;
-  box-shadow: #6b9b82 0 7px 29px 0;
+  max-width: 210px;
 }
 
 /* Footer */
@@ -497,10 +499,24 @@ header button:hover {
   transform: scale(1.1);
 }
 
+.option-button:focus,
+.option-button:hover,
+.search-submit-button:focus,
+.search-submit-button:hover {
+  background-color: #fff;
+  color: #6b9b82;
+  border: #6b9b82 1px solid;
+}
+
+.option-button:focus,
+.search-submit-button:focus {
+  border: #6b9b82 2px solid;
+}
+
 /* Styles for screens from 768px onwards */
 @media (min-width: 768px) {
   /* common styles */
-  hr,
+  .horizontal-separator-footer,
   header button {
     display: none;
   }
@@ -528,6 +544,12 @@ header button:hover {
   /* main section */
   .container-desktop {
     position: relative;
+  }
+
+  .estates-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
   }
 
   .criteria-container {
@@ -596,6 +618,18 @@ header button:hover {
   }
 
   .section-description {
+    font-size: small;
+  }
+
+  .option-buttons {
+    flex-direction: row;
+    margin-top: 4em;
+    gap: 4.5em;
+  }
+
+  .option-button {
+    min-width: 250px;
+    height: 55px;
     font-size: small;
   }
 
@@ -701,150 +735,5 @@ header button:hover {
   .information-section ul li a:focus,
   .information-section ul li a:hover {
     font-weight: bold;
-  }
-
-  /* main section */
-
-  .estates-list {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .estate {
-    width: 30%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
-    align-items: center;
-    margin-bottom: 3em;
-  }
-
-  .estate-image {
-    width: 100%;
-    height: 60%;
-  }
-
-  .details {
-    display: flex;
-    flex-direction: column;
-    padding: 0.5em;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-  }
-
-  .location {
-    display: flex;
-    border-bottom: 2px solid #719e86;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    width: 100%;
-    gap: 20px;
-  }
-
-  .location_icon {
-    color: #719e86;
-    height: 20px;
-  }
-
-  .location p {
-    font-size: 15px;
-    color: #6b9b82;
-    font-weight: bold;
-  }
-
-  .estate_details {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .detail_line {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .detail_number {
-    font-size: 15px;
-    color: #6b9b82;
-    font-weight: bold;
-  }
-
-  .detail_img_number {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .detail-title {
-    font-size: 12px;
-  }
-
-  .detail_unit {
-    font-weight: bolder;
-    font-size: 7px;
-  }
-
-  .area_detail {
-    display: flex;
-    justify-content: flex-start;
-    gap: 2px;
-  }
-
-  .estate_price_status {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 1em;
-  }
-
-  .estate_price {
-    font-size: 25px;
-    font-weight: bold;
-  }
-
-  .estate_status {
-    background-color: #6b9b82;
-    border-radius: 20px;
-    display: flex;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 1em;
-    padding-right: 1em;
-    justify-content: center;
-    align-items: center;
-    color: white;
-  }
-
-  .option_buttons {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 3em;
-    gap: 3em;
-  }
-
-  .option_button {
-    background-color: #6b9b82;
-    color: white;
-    border-radius: 20px;
-    font-size: 15px;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 2em;
-    padding-right: 2em;
-  }
-
-  .option_button:hover {
-    background-color: white !important;
-    color: #6b9b82 !important;
-    box-shadow: #6b9b82 0 7px 29px 0;
   }
 }
