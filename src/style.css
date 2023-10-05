@@ -64,7 +64,7 @@ header button img {
   height: 20px;
 }
 
-/* main section */
+/* main section Home Page */
 .container-desktop {
   display: flex;
   flex-direction: column;
@@ -80,6 +80,8 @@ header button img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.2);
   margin-top: 80px;
   height: 40vh;
   width: 100%;
@@ -88,6 +90,7 @@ header button img {
 
 h1 {
   color: #fff;
+  z-index: 2;
   overflow: hidden;
   white-space: nowrap;
   animation: write 4s steps(40) 1s forwards;
@@ -405,6 +408,12 @@ h1 {
   font-size: 12px;
   height: 40px;
   max-width: 210px;
+}
+
+/* Main About Us Page */
+.about-background {
+  background-image: url(./assets/resources/images/about-background.png);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Footer */
