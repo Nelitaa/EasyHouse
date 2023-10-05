@@ -416,6 +416,26 @@ h1 {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.about-us-information-container p {
+  margin-top: 22px;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.about-us-information-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4em 0 4em 0;
+}
+
+.horizontal-separator-about-us {
+  width: 10em;
+  margin: 1em 0 1em 0;
+  border: 1px solid #6b9b82;
+}
+
 /* Footer */
 footer {
   display: flex;
@@ -640,6 +660,17 @@ header button:hover {
     min-width: 250px;
     height: 55px;
     font-size: small;
+  }
+
+  /* Main About Us Page */
+  .horizontal-separator-about-us {
+    width: 26em;
+    margin: 2em 0 5em 0;
+    border: 1.5px solid #6b9b82;
+  }
+
+  .about-us-information-container {
+    padding: 7em 0 7em 0;
   }
 
   /* Footer */
