@@ -407,6 +407,11 @@ h1 {
   max-width: 210px;
 }
 
+/* Our Team Page */
+.team-background {
+  background-image: url('./assets/resources/images/team-background.jpg');
+}
+
 /* Footer */
 footer {
   display: flex;
