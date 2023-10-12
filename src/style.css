@@ -410,6 +410,8 @@ h1 {
 /* Our Team Page */
 .team-background {
   background-image: url('./assets/resources/images/team-background.jpg');
+  background-position: center 70%;
+  height: 20vh !important;
 }
 
 /* Footer */
@@ -709,7 +711,8 @@ header button:hover {
     width: 120px;
   }
 
-  nav ul li p,
+  #dropdown-buy,
+  #dropdown-rent,
   nav ul li a {
     display: flex;
     align-items: center;
@@ -717,6 +720,26 @@ header button:hover {
     padding: 0 30px 0 30px;
     height: 100%;
     cursor: pointer;
+  }
+
+  .submenu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 1.5em 2em 1.5em 2em;
+    gap: 1em;
+    width: 200%;
+    height: max-content;
+  }
+
+  .submenu li {
+    width: max-content;
+  }
+
+  .submenu li a {
+    justify-content: left;
+    padding: 0;
   }
 
   nav ul li p:focus,
@@ -734,26 +757,6 @@ header button:hover {
 
   nav ul li p:focus img {
     transform: scale(1.1);
-  }
-
-  .submenu {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #fff;
-    padding: 1.5em 2em 1.5em 2em;
-    gap: 1em;
-    width: 200%;
-    height: max-content;
-  }
-
-  .submenu li {
-    width: max-content;
-  }
-
-  .submenu li a {
-    justify-content: left;
-    padding: 0;
   }
 
   .submenu li a:focus,

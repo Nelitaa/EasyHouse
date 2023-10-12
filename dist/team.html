@@ -9,17 +9,31 @@
 
   <body>
     <header>
-      <a class="logo" href="./index.html"><img src="assets/resources/images/logo.png" class="logo-image" alt="Logo"></a>
+      <a class="logo" href="#"><img src="assets/resources/images/logo.png" class="logo-image" alt="Logo"></a>
       <button type="submit"><img src="assets/resources/images/menu.png" alt="Menu"></button>
       <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="buy">Buy<img src="assets/resources/images/arrow-down.png" alt="Arrow down icon"></a></li>
-          <li><a href="rent">Rent<img src="assets/resources/images/arrow-down.png" alt="Arrow down icon"></a></li>
-          <li><a href="./about.html">About Us</a></li>
-          <li><a href="news">News</a></li>
-          <li><a href="contact">Contact</a></li>
-        </ul>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li id="nav-buy">
+                <p id="dropdown-buy">Buy<img src="assets/resources/images/arrow-down.png" alt="Arrow down icon"></p>
+                <ul id="submenu-buy" class="submenu">
+                  <li><a>Properties for Sale</a></li>
+                  <hr class="vertical-separator-submenu">
+                  <li><a href="./team.html">Our Team</a></li>
+                </ul>
+              </li>
+              <li id="nav-rent">
+                <p id="dropdown-rent">Rent<img src="assets/resources/images/arrow-down.png" alt="Arrow down icon"></p>
+                <ul id="submenu-rent" class="submenu">
+                  <li><a>Properties for Rent</a></li>
+                  <hr class="vertical-separator-submenu">
+                  <li><a href="./team.html">Our Team</a></li>
+                </ul>
+              </li>
+              <li><a href="about">About Us</a></li>
+              <li><a href="news">News</a></li>
+              <li><a href="contact">Contact</a></li>
+          </ul>
       </nav>
     </header>
 
