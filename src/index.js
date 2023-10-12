@@ -15,3 +15,36 @@ menuButton.addEventListener('click', () => {
   }
   menuButton.blur(); // Remove focus from button
 });
+
+// Navigation bar submenu
+const dropdownBuy = document.getElementById('dropdown-buy');
+const dropdownRent = document.getElementById('dropdown-rent');
+const submenuBuy = document.getElementById('submenu-buy');
+const submenuRent = document.getElementById('submenu-rent');
+const navBuy = document.getElementById('nav-buy');
+const navRent = document.getElementById('nav-rent');
+
+dropdownBuy.addEventListener('click', () => {
+  if (submenuBuy.style.display === 'none') {
+    submenuBuy.style.display = 'flex';
+  } else {
+    submenuBuy.style.display = 'none';
+  }
+});
+
+dropdownRent.addEventListener('click', () => {
+  if (submenuRent.style.display === 'none') {
+    submenuRent.style.display = 'flex';
+  } else {
+    submenuRent.style.display = 'none';
+  }
+});
+
+// Add an event handler to hide the submenu when the mouse leaves the <li> element
+navBuy.addEventListener('mouseleave', () => {
+  submenuBuy.style.display = 'none';
+});
+
+navRent.addEventListener('mouseleave', () => {
+  submenuRent.style.display = 'none';
+});
