@@ -26,7 +26,7 @@ h1 {
 h3 {
   font-weight: bold;
   color: #6b9b82;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 ul {
@@ -407,6 +407,69 @@ h1 {
   max-width: 210px;
 }
 
+/* Our Team Page */
+.team-background {
+  background-image: url('./assets/resources/images/team-background.jpg');
+  background-position: center 70%;
+  height: 20vh !important;
+}
+
+#team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 60px 0;
+  gap: 3em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+  width: 300px;
+  padding: 40px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 50%;
+  padding: 0 35px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.horizontal-separator-card {
+  width: 100%;
+  margin: 0.9em 0 1.4em 0;
+  border: none;
+  height: 1.7px;
+  background-color: #6b9b82;
+}
+
+.card-container p {
+  font-weight: 100;
+  padding-top: 8px;
+  letter-spacing: 0.5px;
+  font-size: small;
+}
+
+.card-container b {
+  font-size: small;
+}
+
+.card-container h3 {
+  font-size: large;
+}
+
 /* Footer */
 footer {
   display: flex;
@@ -633,6 +696,13 @@ header button:hover {
     font-size: small;
   }
 
+  /* Our Team Page */
+  #team {
+    padding: 80px;
+    row-gap: 7em;
+    column-gap: 12em;
+  }
+
   /* Footer */
   footer {
     padding: 5em 0 5em 0;
@@ -690,7 +760,7 @@ header button:hover {
     height: 16px;
   }
 
-  /* Menu mobile */
+  /* Menu */
   nav,
   nav ul {
     display: flex;
@@ -704,31 +774,65 @@ header button:hover {
     width: 120px;
   }
 
+  #dropdown-buy,
+  #dropdown-rent,
   nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 30px 0 30px;
     height: 100%;
+    cursor: pointer;
   }
 
+  .submenu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 1.5em 2em 1.5em 2em;
+    gap: 1em;
+    width: 200%;
+    height: max-content;
+  }
+
+  .submenu li {
+    width: max-content;
+  }
+
+  .submenu li a {
+    justify-content: left;
+    padding: 0;
+  }
+
+  nav ul li p:focus,
+  nav ul li p:hover,
   nav ul li a:focus,
   nav ul li a:hover {
     color: #fff;
     background-color: #6b9b82;
   }
 
-  nav ul li a:focus img,
-  nav ul li a:hover img {
+  nav ul li p:focus img,
+  nav ul li p:hover img {
     filter: brightness(0) invert(1);
   }
 
-  nav ul li a:focus {
-    font-weight: bold;
+  nav ul li p:focus img {
+    transform: scale(1.1);
   }
 
-  nav ul li a:focus img {
-    transform: scale(1.1);
+  .submenu li a:focus,
+  .submenu li a:hover {
+    color: #6b9b82;
+    background-color: #fff;
+  }
+
+  .vertical-separator-submenu {
+    width: 100%;
+    border: none;
+    height: 0.5px;
+    background-color: #707070;
   }
 
   /* Styles for hover and focus interactions */
